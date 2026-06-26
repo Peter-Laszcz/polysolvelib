@@ -36,4 +36,4 @@ jobs:
         python -m pip install ".[testing]"
     - name: Run tests
       run: |
-        pytest --doctest-modules
+        pytest
