@@ -7,10 +7,23 @@ description = ""
 license = {text = "BSD-3-Clause"}
 
 keywords = []
-dependencies = ["cowsay>=6.1"]
+dependencies = [
+    "cowsay>=6.1",
+    "pytest>=9.1.1",
+]
+
 classifiers = []
 dynamic = ["version"]
 
+[project.optional-dependencies]
+docs = [
+    "sphinx>=9.1.0",
+    "sphinx-autodoc-typehints>=3.12.0",
+    "sphinx-rtd-theme>=3.1.0",
+]
+testing = [
+    "pytest>=9.1.1",
+]
 
 [build-system]
 requires = ["setuptools >= 61.0.0"]
@@ -21,6 +34,9 @@ build-backend = "setuptools.build_meta"
 [project.urls]
 Homepage="https://github.com/XXX/polysolve"
 Repository="https://github.com/XXX/polysolve.git"
+
+[tool.setuptools]
+packages = ['polysolve']
 
 [tool.setuptools.dynamic]
 version = {attr = "polysolve.__version__"}
