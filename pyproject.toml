@@ -1,7 +1,7 @@
 [project]
 name = "polysolve"
 authors = [{name = "Peter Laszcz", email = "laszczpeter@gmail.com"}]
-requires-python = ">= 3.13"
+requires-python = ">= 3.10"
 readme = "README.md"
 description = ""
 license = {text = "BSD-3-Clause"}
@@ -17,8 +17,8 @@ dynamic = ["version"]
 
 [project.optional-dependencies]
 docs = [
-    "sphinx>=9.1.0",
-    "sphinx-autodoc-typehints>=3.12.0",
+    "sphinx>=8.0.0",
+    "sphinx-autodoc-typehints>=3",
     "sphinx-rtd-theme>=3.1.0",
 ]
 testing = [
